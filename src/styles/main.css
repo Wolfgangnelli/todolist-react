@@ -1,0 +1,153 @@
+/* Importo il font da Google fonts */
+@import url("https://fonts.googleapis.com/css?family=Delius+Swash+Caps&display=swap");
+
+/* 
+   Utilizzo il normalize di tailwind per
+   avere i default uguali su tutti i browser
+*/
+@import "tailwindcss/base";
+
+/*
+   Importo i componenti base (di default)
+   di tailwind
+*/
+@import "tailwindcss/components";
+
+/*
+   Importo le utilities di tailwind
+   Mi servono per gli hover, i focus,
+   le media query etc...
+*/
+@import "tailwindcss/utilities";
+
+.App {
+  text-align: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 36%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 15px;
+  /* min-height: 100vh; */
+  /* font-size: calc(10px + 2vmin); */
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+span.uncompleted:after {
+  content: "\025A1";
+  font-size: 28px;
+  padding: 4px;
+}
+
+span.completed:after {
+  content: "\02713";
+  font-size: 28px;
+  padding: 4px;
+  color: green;
+}
+
+ul.todos li:hover > span.cross:after {
+  content: "\02A2F"; /*cross*/
+  color: red;
+  font-size: 18px;
+  float: right;
+  margin-right: 5px;
+}
+ul.lists li:hover > span.cross:after {
+  content: "\02A2F"; /*cross*/
+  color: red;
+  font-size: 18px;
+  float: right;
+  margin-right: 5px;
+}
+
+ul.todos li.completed {
+  text-decoration: line-through;
+  color: red;
+}
+
+ul.todos,
+ul.lists {
+  min-height: 300px;
+}
+
+.menu {
+  min-width: 300px;
+}
+ul.menu li a {
+  transition: 0.2s;
+}
+ul.menu li a:active {
+  color: #2b6cb0;
+}
+ul.menu a.active {
+  color: #2b6cb0;
+}
+.footer {
+  background-color: #282c34;
+  padding: 15px;
+  color: white;
+}
+.footer ul li.active {
+  color: #2b6cb0;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.btn {
+  text-align: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 36%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.btn:hover {
+  background: rgb(0, 212, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(9, 9, 121, 1) 64%,
+    rgba(2, 0, 36, 1) 100%
+  );
+}
+
+.allTodos {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 36%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}

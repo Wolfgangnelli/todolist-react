@@ -1,0 +1,75 @@
+{
+  "todos": [
+    {
+      "todo": "fare pallamano",
+      "completed": true,
+      "id": 1
+    },
+    {
+      "todo": "Fare la spesa",
+      "completed": false,
+      "id": 2
+    },
+    {
+      "todo": "lavare la macchina",
+      "completed": false,
+      "id": 3
+    },
+    {
+      "todo": "pippo",
+      "completed": false,
+      "id": 4
+    },
+    {
+      "todo": "Andare a lavorare",
+      "completed": false,
+      "id": 5
+    },
+    {
+      "todo": "fare da mangiare",
+      "completed": false,
+      "id": 6
+    },
+    {
+      "todo": "comprare del pane",
+      "completed": true,
+      "list": "1",
+      "id": 7
+    },
+    {
+      "todo": "portare la palla ",
+      "completed": false,
+      "list": "2",
+      "id": 8
+    },
+    {
+      "todo": "comprare prosciutto",
+      "completed": false,
+      "list": 1,
+      "id": 9
+    },
+    {
+      "todo": "vino rosso",
+      "completed": false,
+      "list": 3,
+      "id": 10
+    }
+  ],
+  "activeFilter": {
+    "filter": "ALL"
+  },
+  "lists": [
+    {
+      "name": "Lista della spesa",
+      "id": 1
+    },
+    {
+      "name": "Giocare a pallacanestro",
+      "id": 2
+    },
+    {
+      "name": "Comprare vino",
+      "id": 3
+    }
+  ]
+}
